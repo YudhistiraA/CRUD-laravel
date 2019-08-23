@@ -14,6 +14,11 @@ Route::get('/1', function () {
 Route::resource('kontak','Kontak');
 Route::get('/2', function () {
   return view('create');});
+Route::resource('satpam','satpam');
+Route::resource('pulau','pulau');
+Route::get('/9', function () {
+  return view('createpulau');});
+
   
   Route::get('login','login@index');
   Route::post('/cek','login@cek');
